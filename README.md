@@ -1,5 +1,5 @@
 # Priority Queues
-Balanced binary tree implementation of min and max priority queues in Kotlin
+Balanced binary tree implementation of priority queues in Kotlin
 
 ## Time Complexities
 1. Insertion: `O(log n)`
