@@ -2,7 +2,7 @@ package datastructures
 
 class MaxPriorityQueue<T: Comparable<T>> : PriorityQueue<T>() {
 
-    fun insert(item: T) {
+    fun insertItem(item: T) {
         heapArray.add(item)
         heapifyUp(size - 1)
     }
