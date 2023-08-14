@@ -1,4 +1,4 @@
-package datastructures
+package datastructures.definitions
 
 abstract class PriorityQueue<T: Comparable<T>> {
     val heapArray = mutableListOf<T>()

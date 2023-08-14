@@ -1,12 +1,8 @@
-package datastructures
+package datastructures.priorityqueues
+
+import datastructures.definitions.PriorityQueue
 
 class MaxPriorityQueue<T: Comparable<T>> : PriorityQueue<T>() {
-
-    fun insertItem(item: T) {
-        heapArray.add(item)
-        heapifyUp(size - 1)
-    }
-
     fun removeMax(): T? {
         if (isEmpty()) return null
         if (size == 1) return heapArray.removeAt(0)
@@ -16,6 +12,11 @@ class MaxPriorityQueue<T: Comparable<T>> : PriorityQueue<T>() {
         heapifyDown()
 
         return maxElement
+    }
+
+    fun insertItem(item: T) {
+        heapArray.add(item)
+        heapifyUp(size - 1)
     }
 
     fun max(): T? {

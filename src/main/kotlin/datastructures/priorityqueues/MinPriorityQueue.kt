@@ -1,4 +1,6 @@
-package datastructures
+package datastructures.priorityqueues
+
+import datastructures.definitions.PriorityQueue
 
 class MinPriorityQueue<T: Comparable<T>> : PriorityQueue<T>() {
     fun removeMin(): T? {
